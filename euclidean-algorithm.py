@@ -11,10 +11,10 @@ n2 = min(input1, input2)
 result = 1
 while (result != 0):
     result = n1 % n2
-    multiple = n1 / n2
-    print("%d = (%d)*%d + %d" % (n1, multiple, n2, result))
+    multiple = n1 // n2
+    print("{:d} = ({:d})*{:d} + {:d}".format(n1, multiple, n2, result))
     n1 = n2
     n2 = result
 
 print()
-print("gcd(%d, %d) = %d" % (input1, input2, n1))
+print("gcd({:d}, {:d}) = {:d}".format(input1, input2, n1))
